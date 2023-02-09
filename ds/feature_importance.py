@@ -25,7 +25,6 @@ def pearson_correlation_selector(X, y,num_feats):
 
     return cor_support
 
-
 def chi_square_selector(X, y,num_feats):
     X_norm = MinMaxScaler().fit_transform(X)
     chi_selector = SelectKBest(chi2, k=num_feats)
